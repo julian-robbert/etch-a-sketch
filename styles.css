@@ -3,29 +3,45 @@
     --rows: 16;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    background-color: #eeeeee;
-    padding: 30px;
-    margin: 0;
+body, button{
     color: #424242;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 24px;
+    background-color: #edd4f5;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding: 30px;
+    margin: 0;
 }
 
 h1{
-    font-size: 69px;
+    font-size: 80px;
     margin: 0;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+#sideBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 750px;
+    gap: 30px;
 }
 
 #gridContainer{
     display: grid;
-    height: 600px;
-    width: 600px;
+    height: 750px;
+    width: 750px;
     grid-template-columns: repeat(var(--columns), 1fr);
     grid-template-rows: repeat(var(--rows), 1fr);
     box-shadow: 0 0 10px #9e9e9e;
@@ -33,15 +49,13 @@ h1{
 }
 
 button{
-    color: #424242;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 24px;
     padding: 10px 25px;
     border-radius: 10px;
+    width: 270px;
 }
 
 #footer{
-    position: fixed;
-    bottom: 0;
-    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 30px
 }

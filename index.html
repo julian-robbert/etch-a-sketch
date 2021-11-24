@@ -9,19 +9,26 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="title">
-        <h1>Etch-a-Sketch</h1>
+    <div id="header">
+        <div id="title">
+            <h1>Etch-a-Sketch</h1>
+        </div>
     </div>
-    <div id="gridContainer">
-
-    </div>
-    <div id="controls">
-        <button id="setGridSize" type="button" onclick="promptGridSize()">Set grid size</button>
-        <button id="setGridSize" type="button" onclick="clear()">Clear</button>
-        <button id="setGridSize" type="button" onclick="resetGrid()">Reset grid</button>
-    </div>
+    <main>
+        <div id="sideBar">
+            <div id="currentGridSize">
+                Default grid size: 16x16
+            </div>
+            <button id="setGridSize" type="button" onclick="promptGridSize()">Set grid size</button>
+            <button id="setGridSize" type="button" onclick="clearDrawing()">Clear drawing</button>
+            <button id="setGridSize" type="button" onclick="resetGrid()">Reset grid to default</button>
+        </div>
+        <div id="gridContainer"></div>
+    </main>
     <div id="footer">
-        Copyright © 2021 Julian Robbert
+        <div id="footerContent">
+            Copyright © 2021 Julian Robbert
+        </div>
     </div>
 </body>
 </html>
